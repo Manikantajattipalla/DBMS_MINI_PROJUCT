@@ -143,6 +143,14 @@ body, html {
   background-image: url("/w3images/coffeehouse.jpg");
   min-height: 75%;
 }
+.w3-badge, .w3-tag {
+    background-color:grey;
+    color: #fff;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
 
 /* .menu {
   display: none;
@@ -170,12 +178,14 @@ body, html {
 </div> -->
 
 <!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+<header class="bgimg w3-display-container w3-grayscale-min" style="margin-top:-100px;" id="home">
+<img src="images/coffee.jpg" style="width:100%;max-width:5000px;pading-top:0px;" class="w3-margin-top">
+
+  <div class="w3-display-bottomcenter w3-center w3-padding-large w3-hide-small">
     <span class="w3-tag">Open from 6am to 5pm</span>
   </div>
   <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+    <span class="w3-text-black" style="font-size:90px">The<br>Cafe</span>
   </div>
   <div class="w3-display-bottomright w3-center w3-padding-large">
     <span class="w3-text-white">15 Adr street, 5015</span>
@@ -195,7 +205,7 @@ body, html {
       <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
       <p>Chef, Coffeeist and Owner: Liam Brown</p>
     </div>
-    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <img src="images/coffee.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
     <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
     <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
   </div>
@@ -258,7 +268,7 @@ body, html {
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
     <p>Find us at some address at some place.</p>
-    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+    <img src="images/tea.jpg" class="w3-image" style="width:100%">
     <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
     <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
     <form action="/action_page.php" target="_blank">
