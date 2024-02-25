@@ -147,8 +147,8 @@ body, html {
     background-color:grey;
     color: #fff;
     display: inline-block;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
 }
 
