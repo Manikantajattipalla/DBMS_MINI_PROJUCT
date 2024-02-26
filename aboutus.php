@@ -179,13 +179,13 @@ body, html {
 
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" style="margin-top:-100px;" id="home">
-<img src="images/coffee.jpg" style="width:100%;max-width:5000px;pading-top:0px;" class="w3-margin-top">
+<img src="images/coffee.jpg" style="width:100%;max-width:5000px;pading-top:0px;height : 109%;" class="w3-margin-top">
 
   <div class="w3-display-bottomcenter w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Open from 6am to 5pm</span>
+    <span class="w3-tag">Services active from 6am to 9pm</span>
   </div>
   <div class="w3-display-middle w3-center">
-    <span class="w3-text-black" style="font-size:90px">The<br>Cafe</span>
+    <span class="w3-text-black" style="font-size:90px">Le Cafe'</span>
   </div>
   <div class="w3-display-bottomright w3-center w3-padding-large">
     <span class="w3-text-white">15 Adr street, 5015</span>
@@ -206,7 +206,7 @@ body, html {
       <p>Chef, Coffeeist and Owner: Liam Brown</p>
     </div>
     <img src="images/coffee.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
-    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p><strong>To Register Contact:</strong> 9353413630</p>
     <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
   </div>
 </div>
@@ -264,7 +264,7 @@ body, html {
 </div> -->
 
 <!-- Contact/Area Container -->
-<div class="w3-container" id="where" style="padding-bottom:32px;">
+<!-- <div class="w3-container" id="where" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
     <p>Find us at some address at some place.</p>
@@ -279,17 +279,17 @@ body, html {
       <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
     </form>
   </div>
-</div>
+</div> -->
 
 <!-- End page content -->
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Designed by Manikanta,Dilraj,Ashith K e,Chikkanna</a></p>
 </footer>
 
-<script>
+<!-- <script>
 // Tabbed Menu
 function openMenu(evt, menuName) {
   var i, x, tablinks;
@@ -305,9 +305,9 @@ function openMenu(evt, menuName) {
   evt.currentTarget.firstElementChild.className += " w3-dark-grey";
 }
 document.getElementById("myLink").click();
-</script>
+</script> -->
 
 
-      <iframe src="https://www.google.com/maps/place/Le+Cafe/@11.9316155,79.8335933,17z/data=!3m1!4b1!4m5!3m4!1s0x3a53636a24873e45:0x7f1e7ad6a30982dd!8m2!3d11.9316103!4d79.835782" style="width: 250px"></iframe>
+      <!-- <iframe src="https://www.google.com/maps/place/Le+Cafe/@11.9316155,79.8335933,17z/data=!3m1!4b1!4m5!3m4!1s0x3a53636a24873e45:0x7f1e7ad6a30982dd!8m2!3d11.9316103!4d79.835782" style="width: 250px"></iframe> -->
          </body>
 </html>
