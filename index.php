@@ -124,23 +124,25 @@ session_start();
     </div>
   </nav>
    
-  <div class="wide">
-  <div class="col-xs-5 line">
-    <hr>
+  <div class="row">
+  <div class="row">
+    <div class="col-xs-5 line">
+      <hr>
+    </div>
+    <div class="col-xs-2 logo"><img src="images/LogoImage.jpg"></div>
+    </div>
+    <div class="row">
+    <div class="tagline" style="text-align: center; font-size: 50px; color: white; text-shadow: 2px 2px 5px darkgrey; font-family: 'Times New Roman'; position: absolute; top: 30%; left: 51%; transform: translate(-50%, -50%);margin-top: 5%;">Good Food is Good Mood</div>
   </div>
-  <div class="col-xs-2 logo"><img src="images/LogoImage.jpg"></div>
-  <div class="col-xs-5 line">
-    <hr>
-  </div>
-  <div class="tagline">Good Food is Good Mood</div>
   </div>
 
-<br>
-  <div class="orderblock">
+<br><br><br><br><br><br><br><br><br><br>
+<div class="row">
+  <div class="col-xs-5 line" style="left: 31%">
     <h2>Feeling Hungry?</h2>
     <center><a class="btn btn-success btn-lg" href="customerlogin.php" role="button"> Order Now </a></center>
   </div>
- 
+  </div>
 
   
 
