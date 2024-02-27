@@ -45,8 +45,8 @@ body {
 .tagline {
   text-align: center;
   font-size: 30px;
-  color: white;
-  text-shadow: 2px 2px 5px darkgrey;
+  color: rgb(244, 237, 237);
+  text-shadow: 2px 2px 5px rgb(151, 147, 147);
   font-family: "Times New Roman";
   transform: translate(-50%, -50%);
   position: absolute;
@@ -55,7 +55,7 @@ body {
 }
 
 .logo {
-  color:#fff;
+  color:#f7f1f1;
   font-weight:800;
   font-size:14pt;
   padding:25px;
@@ -115,7 +115,7 @@ body {
 
 .bg-4{
   background-color: #2f2f2f;
-  color: #ffffff;
+  color: #fbf8f8;
 
 }
 

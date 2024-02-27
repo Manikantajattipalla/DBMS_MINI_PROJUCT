@@ -5,7 +5,7 @@ session_start();
 <html>
 
 <head>
-  <title> Home | Le Cafe' </title>
+  <title> Home | Quick Bite</title>
 </head>
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -13,6 +13,15 @@ session_start();
 <link rel="stylesheet" type="text/css" href="css/index.css">
 
 <body>
+<style>
+    body {
+      background-image: url("images/menou.jpeg");
+      background-size: cover;
+
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
 
   <button onclick="topFunction()" id="myBtn" title="Go to top">
     <span class="glyphicon glyphicon-chevron-up"></span>
@@ -45,13 +54,13 @@ session_start();
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php">Le Cafe'</a>
+        <a class="navbar-brand" href="index.php">Quick Bite</a>
       </div>
 
       <div class="collapse navbar-collapse " id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="index.php">Home</a></li>
-          <li><a href="aboutus.php">About</a></li>
+          <!-- <li><a href="aboutus.php">About</a></li> -->
           <li><a href="contactus.php">Contact Us</a></li>
 
         </ul>
@@ -123,23 +132,22 @@ session_start();
 
     </div>
   </nav>
-   
   <div class="row">
   <div class="row">
     <div class="col-xs-5 line">
       <hr>
     </div>
-    <div class="col-xs-2 logo"><img src="images/LogoImage.jpg"></div>
-    </div>
+
     <div class="row">
-    <div class="tagline" style="text-align: center; font-size: 50px; color: white; text-shadow: 2px 2px 5px darkgrey; font-family: 'Times New Roman'; position: absolute; top: 30%; left: 51%; transform: translate(-50%, -50%);margin-top: 5%;">Good Food is Good Mood</div>
+    <div class="tagline" style="text-align: center; font-size: 50px; color:tomato; text-shadow: 2px 2px 5px darkgrey; font-family: 'Times New Roman'; position: absolute; top: 30%; left: 51%; transform: translate(-50%, -50%);margin-top: 5%;">Good Food is Good Mood</div>
+
   </div>
   </div>
 
 <br><br><br><br><br><br><br><br><br><br>
 <div class="row">
   <div class="col-xs-5 line" style="left: 31%">
-    <h2>Feeling Hungry?</h2>
+    <h1 style="color:piano black;">Feeling Hungry?</h1>
     <center><a class="btn btn-success btn-lg" href="customerlogin.php" role="button"> Order Now </a></center>
   </div>
   </div>

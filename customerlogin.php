@@ -10,7 +10,7 @@ header("location: foodlist.php");
 <html>
 
   <head>
-    <title> Guest Login | Le Cafe' </title>
+    <title> Guest Login | Qui9ck Bite </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/managerlogin.css">
@@ -88,7 +88,7 @@ header("location: foodlist.php");
 
     <div class="container">
     <div class="jumbotron">
-     <h1>Hi Guest,<br> Welcome to <span class="edit"> Le Cafe' </span></h1>
+     <h1>Hi Guest,<br> Welcome to <span class="edit"> Quick bite </span></h1>
      <br>
    <p>Kindly LOGIN to continue.</p>
     </div>
