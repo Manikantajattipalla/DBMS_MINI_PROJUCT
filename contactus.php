@@ -5,7 +5,7 @@ session_start();
 <html>
 
   <head>
-    <title> Contact | Le Cafe' </title>
+    <title> Contact | Quick Bite</title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/contactus.css">
@@ -125,7 +125,7 @@ else {
     <br>
 
     <div class="heading">
-     <strong>Want to contact <span class="edit"> Le Cafe' </span>?</strong>
+     <strong>Want to contact <span class="edit"> Quick Bite </span>?</strong>
      <br>
     Here are a few ways to get in touch with us.
     </div>
