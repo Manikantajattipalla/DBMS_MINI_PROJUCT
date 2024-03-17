@@ -1,7 +1,7 @@
 <html>
 
   <head>
-    <title> Manager Login | Quick Bite </title>
+    <title> Manager Login | Le Cafe' </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/manager_registered_success.css">
@@ -51,7 +51,7 @@
         <div class="collapse navbar-collapse " id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active" ><a href="index.php">Home</a></li>
-            <li><a href="aboutus.php">About</a></li>
+            <!-- <li><a href="aboutus.php">About</a></li> -->
             <li><a href="contactus.php">Contact Us</a></li>
           </ul>
 

@@ -4,157 +4,146 @@ session_start();
 
 <html>
 
-<head>
-  <title> Home | Quick Bite</title>
-</head>
+  <head>
+    <title> Home | Le Cafe' </title>
+  </head>
 
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
 
-<link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type = "text/css" href ="css/index.css">
 
-<body>
-<style>
-    body {
-      background-image: url("images/menou.jpeg");
-      background-size: cover;
+  <body>
 
-      background-repeat: no-repeat;
-    }
-  </style>
-</head>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </button>
+    <script type="text/javascript">
+      window.onscroll = function()
+      {
+        scrollFunction()
+      };
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </button>
-  <script type="text/javascript">
-    window.onscroll = function () {
-      scrollFunction()
-    };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-      } else {
-        document.getElementById("myBtn").style.display = "none";
+      function scrollFunction(){
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
       }
-    }
 
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top navigation-clean-search" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.php">Quick Bite</a>
-      </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top navigation-clean-search" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.php">Le Cafe'</a>
+        </div>
 
-      <div class="collapse navbar-collapse " id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.php">Home</a></li>
-          <!-- <li><a href="aboutus.php">About</a></li> -->
-          <li><a href="contactus.php">Contact Us</a></li>
+        <div class="collapse navbar-collapse " id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active" ><a href="index.php">Home</a></li>
+            <!-- <li><a href="aboutus.php">About</a></li> -->
+            <li><a href="contactus.php">Contact Us</a></li>
 
-        </ul>
+          </ul>
 
-        <?php
-        if (isset($_SESSION['login_user1'])) {
+<?php
+if(isset($_SESSION['login_user1'])){
 
-          ?>
+?>
 
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome
-                <?php echo $_SESSION['login_user1']; ?>
-              </a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_user1']; ?> </a></li>
             <li><a href="myrestaurant.php">MANAGER CONTROL PANEL</a></li>
             <li><a href="logout_m.php"><span class="glyphicon glyphicon-log-out"></span> Log Out </a></li>
           </ul>
-          <?php
-        } else if (isset($_SESSION['login_user2'])) {
-          ?>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome
-                <?php echo $_SESSION['login_user2']; ?>
-                </a></li>
-              <li><a href="foodlist.php"><span class="glyphicon glyphicon-cutlery"></span> Food Zone </a></li>
-              <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart
-                  (
-                  <?php
-                  if (isset($_SESSION["cart"])) {
-                    $count = count($_SESSION["cart"]);
-                    echo "$count";
-                  } else
-                    echo "0";
-                  ?>)
-                </a></li>
-              <li><a href="logout_u.php"><span class="glyphicon glyphicon-log-out"></span> Log Out </a></li>
-            </ul>
-        <?php
-        } else {
+<?php
+}
+else if (isset($_SESSION['login_user2'])) {
+  ?>
+           <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_user2']; ?> </a></li>
+            <li><a href="foodlist.php"><span class="glyphicon glyphicon-cutlery"></span> Food Zone </a></li>
+            <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart
+              (<?php
+              if(isset($_SESSION["cart"])){
+              $count = count($_SESSION["cart"]); 
+              echo "$count"; 
+            }
+              else
+                echo "0";
+              ?>)
+             </a></li>
+            <li><a href="logout_u.php"><span class="glyphicon glyphicon-log-out"></span> Log Out </a></li>
+          </ul>
+  <?php        
+}
+else {
 
-          ?>
+  ?>
 
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Sign Up <span class="caret"></span>
-                </a>
+<ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Sign Up <span class="caret"></span> </a>
                 <ul class="dropdown-menu">
-                  <li> <a href="customersignup.php"> User Sign-up</a></li>
-                  <li> <a href="managersignup.php"> Manager Sign-up</a></li>
-
-                </ul>
-              </li>
-
-              <li><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span> Login <span
-                    class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li> <a href="customerlogin.php"> User Login</a></li>
-                  <li> <a href="managerlogin.php"> Manager Login</a></li>
-
-                </ul>
-              </li>
+              <li> <a href="customersignup.php"> User Sign-up</a></li>
+              <li> <a href="managersignup.php"> Manager Sign-up</a></li>
+              
             </ul>
+            </li>
 
-          <?php
-        }
-        ?>
-      </div>+
+            <li><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span> Login <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <li> <a href="customerlogin.php"> User Login</a></li>
+              <li> <a href="managerlogin.php"> Manager Login</a></li>
+             
+            </ul>
+            </li>
+          </ul>
 
-    </div>
-  </nav>
-  <div class="row">
-  <div class="row">
-    <div class="col-xs-5 line">
-      <hr>
-    </div>
+<?php
+}
+?>
+       </div>
 
+      </div>
+    </nav>
+
+    <div>
+    
     <div class="row">
-    <div class="tagline" style="text-align: center; font-size: 50px; color:tomato; text-shadow: 2px 2px 5px darkgrey; font-family: 'Times New Roman'; position: absolute; top: 30%; left: 51%; transform: translate(-50%, -50%);margin-top: 5%;">Good Food is Good Mood</div>
-
-  </div>
-  </div>
-
-<br><br><br><br><br><br><br><br><br><br>
-<div class="row">
-  <div class="col-xs-5 line" style="left: 31%">
-    <h1 style="color:piano black;">Feeling Hungry?</h1>
-    <center><a class="btn btn-success btn-lg" href="customerlogin.php" role="button"> Order Now </a></center>
-  </div>
-  </div>
-
+    <div class="row">
+      <div class="col-xs-5 line">
+        <hr>
+      </div>
+      <div class="col-xs-2 logo"><img src="images/LogoImage.jpg"></div>
+      </div>
+      <div class="row">
+      <div class="tagline" style="text-align: center; font-size: 50px; color: white; text-shadow: 2px 2px 5px darkgrey; font-family: 'Times New Roman'; position: absolute; top: 30%; left: 51%; transform: translate(-50%, -50%);margin-top: 5%;">Good Food is Good Mood</div>
+    </div>
+    </div>
   
+  <br><br><br><br><br><br><br><br><br><br>
+  <div class="row">
+    <div class="col-xs-5 line" style="left: 31%">
+      <h2>Feeling Hungry?</h2>
+      <center><a class="btn btn-success btn-lg" href="customerlogin.php" role="button"> Order Now </a></center>
+    </div>
+    </div>
+  
+    </div>
 
-
+    
+  
 </body>
-
 </html>

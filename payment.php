@@ -10,7 +10,7 @@ header("location: customerlogin.php");
 <html>
 
   <head>
-    <title> Cart |Quick Bite </title>
+    <title> Cart | Le Cafe' </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/payment.css">
@@ -52,13 +52,13 @@ header("location: customerlogin.php");
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Quick Bite</a>
+          <a class="navbar-brand" href="index.php">Le Cafe'</a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">
           <ul class="nav navbar-nav">
             <li><a href="index.php">Home</a></li>
-            <li><a href="aboutus.php">About</a></li>
+            <!-- <li><a href="aboutus.php">About</a></li> -->
             <li><a href="contactus.php">Contact Us</a></li>
 
           </ul>
