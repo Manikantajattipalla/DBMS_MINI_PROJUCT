@@ -13,7 +13,14 @@ session_start();
   <link rel="stylesheet" type = "text/css" href ="css/index.css">
 
   <body>
+  <style>
+    body {
+      background-image: url("images/menou.jpeg");
+      background-size: cover;
 
+      background-repeat: no-repeat;
+    }
+  </style>
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </button>
@@ -61,8 +68,6 @@ session_start();
 if(isset($_SESSION['login_user1'])){
 
 ?>
-
-
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_user1']; ?> </a></li>
             <li><a href="myrestaurant.php">MANAGER CONTROL PANEL</a></li>
